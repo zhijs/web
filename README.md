@@ -5,4 +5,4 @@
 
    
 ### 例子2:图片懒加载   
-### 效果展示 http://htmlpreview.github.io/web/lazyLoad/index.html
+### 效果展示  https://zhijs.github.io/web/lazyLoad
