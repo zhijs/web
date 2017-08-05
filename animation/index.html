@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>LWENWAN</title>
+    <style type="text/css">
+      html,body{
+        margin: 0;
+        height: 100%;
+      }
+      ul,li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      #header, #header .ct{
+        height: 100%;
+      }
+
+      #header .ct{
+        position: relative;
+      }
+      #header .ct > li{
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+      }
+      #header .main{
+        position: absolute;
+        width: 600px;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+      }
+      #header .main h3{
+        font-size: 34px;
+      }
+      #header .main p{
+        font-size: 16px;
+        line-height: 2;
+      }
+      
+      .bg1{
+        background-image: url(images/aa.jpg);
+      }
+      .bg2{
+        background-image: url(images/bb.jpg)
+      }
+      .bg3{
+        background-image: url(images/cc.jpg)
+      }
+      .cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        opacity: 0.8;
+      }
+
+
+      @keyframes slide
+      {
+        0% {opacity: 0}
+        5% {opacity: 1}
+        28% {opacity: 1}
+        33.3% {opacity: 0;}
+      }
+
+     .item1
+     {
+        animation: slide 15s linear 0s infinite;
+      }
+      .item2{
+        animation: slide 15s linear 5s infinite;
+      }
+       .item3{
+        animation: slide 15s linear 10s infinite;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="header">
+      <ul class="ct">
+        <li class="item1">
+          <div class="cover  bg1"></div>
+          <div class="main">
+            <h3>美食</h3> 
+            <p>喜欢甜点，爱喝奶茶</p>
+          </div>
+        </li>
+        <li class="item2">
+          <div class="cover bg2"></div>
+          <div class="main">
+            <h3>游戏</h3> 
+            <p>喜欢王者，阴阳师，梦幻西游</p>
+          </div>
+        </li>
+        <li class="item3">
+          <div class="cover bg3"></div>
+          <div class="main">
+            <h3>没错</h3> 
+            <p>就是一个美腻的Gril</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+  </body>
+</html>
