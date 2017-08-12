@@ -24,10 +24,10 @@ to{
 	left: 50%;
 	margin-left: -60px;
 	border-radius: 50%;
-	border-top: 15px solid rgb(255,255,255,1);
-	border-left: 15px solid rgb(255,255,255,0.3);
-	border-right: 15px solid rgb(255,255,255,0.3);
-	border-bottom: 15px solid rgb(255,255,255,0.4);
+	border-top: 15px solid rgba(255,255,255,1);
+	border-left: 15px solid rgba(255,255,255,0.3);
+	border-right: 15px solid rgba(255,255,255,0.3);
+	border-bottom: 15px solid rgba(255,255,255,0.3);
 	animation:load 2s infinite linear;
 
 }

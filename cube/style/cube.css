@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.contain{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #230;
+
+}
+
+.cube{
+	width:120px;
+	height: 120px;
+	margin-top:100px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform-style:preserve-3d;
+	transform:translate(-50%,50%);
+	animation:rote 4s infinite linear;
+}
+
+
+.cube figure{
+	width:180px;
+	
+	height: 180px;
+	position: absolute;
+	text-align:center;	
+	border:2px solid #ff0;
+	line-height: 180px;/*行高设置成和容器一样高，实现文字的上下居中*/
+	font-size: 120px;
+	font-weight: bold; /*字体加粗*/
+
+}
+/* translate必须放在roate前面申明，translateZ()不能传百分比*/
+
+.face1{
+	background:red;
+	transform:translateZ(0) rotateX(0) rotateY(0);
+}
+
+.face2{
+	background:green;
+	transform:translateY(-50%) translateZ(-90px) rotateX(90deg) rotateY(0) ;
+}
+.face3{
+	background:yellow;
+	transform:translateY(0) translateZ(-90px) translateX(50%)  rotateX(0) rotateY(90deg) ; 
+}
+.face4{
+	background:blue;
+	transform:translateY(50%) translateZ(-90px) translateX(0)  rotateX(90deg) rotateY(0) ; 
+}
+.face5{
+	background:gray;
+	transform:translateY(0) translateZ(-90px) translateX(-50%)  rotateX(0) rotateY(90deg) ; 
+}
+
+.face6{
+	background:purple;
+	transform:translateY(0) translateZ(-180px) translateX(0)  rotateX(0) rotateY(0) ; 
+}
+
+@keyframes rote
+{
+	from{
+		transform:translateZ(-100px) rotateX(0) rotateY(0) rotateZ(0);
+	}
+	to{
+		transform:translateZ(-100px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+	}
+}
