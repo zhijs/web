@@ -2,7 +2,7 @@
 <br/>
 ### 实现原理
 <br/>
-#### 首先圆圈进度条是一直在旋转的，旋转我们可以利用的是css3的rotate(deg)实现
+### 首先圆圈进度条是一直在旋转的，旋转我们可以利用的是css3的rotate(deg)实现
 <br/>
 ### rotate(deg):
 一个二维旋转的css3属性，作用是将指定元素旋转指定的角度,正值表示顺时针方向旋转，负值表示逆时针防线旋转，旋转的角度范围为(-360deg~360deg)。
@@ -12,8 +12,8 @@
 ![image](images/timg.gif);
 <br/>
 这可以看成是一个圆弧在一直旋转，html中没有圆形标签，都是方形的，但可以通过设置border-radius将容器变为圆形，然后旋转即可
-###　关键样式
-```
+### 关键样式
+<code>
 @keyframes load{  //这里设置动画，使容器旋转一周
 from{
 	transform:rotate(0deg);
@@ -41,7 +41,7 @@ to{
 	animation:load 2s infinite linear;
 
 }
-```
+<code/>
 <br/>
 ### 扩展
 <br/>
