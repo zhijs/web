@@ -41,3 +41,18 @@ to{
 
 }
 ```
+
+### 扩展
+<br/>
+roate的三维实现样式有
+<br/>　
+- rotateX(deg) //绕x轴旋转
+- rotateY(deg) //绕Y轴旋转
+- rotateZ(deg) //绕Z轴旋转
+<br/>　
+#### 在应用3d动画使，必须在所在元素样式中申明 transform-style: preserve-3d
+<br/>　
+#### 其坐标系统图如下所示
+<br/>　
+![image](images/zuobiao.JPG);
+  
