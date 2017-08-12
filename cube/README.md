@@ -1,12 +1,16 @@
+### 其效果图如下：
+  https://zhijs.github.io/web/cube
+
 ### css3实现自由摆动的立方体
 实现立方体，主要用到的css3动画属性有  
  <ol>
- <li>translateX(a )/ translateY(a )/translateZ(a) 
+ 
+ <li><p>translateX(a )/ translateY(a )/translateZ(a)</p> 
 <p>分别是往x,y,z方向移动a像素的距离</p>
 </li>
 <li>
 <p>rotateX(deg) / rotateY(deg)/ rotateZ(deg) </p>
-<P>分别表示沿x,y,z轴旋转，正值为顺顺时针放方向，负值为逆时针方向</P>
+<P>分别表示沿x,y,z轴旋转，正值为顺时针方向，负值为逆时针方向</P>
 </li>
 <li>
   animation属性
@@ -14,7 +18,7 @@
 </li>
 </ol>
 
-### 如何定义动画
+###  如何定义动画
 动画通过
 <p>@keyframes 动画名称
 {  
@@ -25,15 +29,45 @@
 </p>
 #### 实现立方体第一步
 #### 构造立方体
-首先将六个面至于重合的位置 eg:如下图所示
-![images](images/a.png);  
-首先构造顶面，顶面可以看成是由正面沿x轴顺时针方向旋转90度，然后沿y轴负方向平移高度的一半，在沿z轴负方向平移高度的一般，从而得到顶面  
+首先将六个面置于重合的位置 eg:如下图所示
+![这里写图片描述](http://img.blog.csdn.net/20170812175758417?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzIyOTA2Nzk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast) 
+接下来分别构造各个面，例如顶面可以看成是由正面沿x轴顺时针方向旋转90度，然后沿y轴负方向平移高度的一半，再沿z轴负方向平移高度的一半，从而得到顶面  
+代码为
+```
+ .face2{
+	background:green;
+	transform:translateY(-50%) translateZ(-90px) rotateX(90deg) rotateY(0) ;
+} 
+```
 结果如下图所示  
-![images](images/b.png);
+![这里写图片描述](http://img.blog.csdn.net/20170812175827795?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzIyOTA2Nzk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 同理可以构造出其他的各个面。
 
 ### 将包含这些面的容器应用动画，使其沿x,y,z轴旋转。
-
+#### 代码如下
+```
+ index.html
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>css3 立方体</title>
+	<meta charset='utf-8'/>
+	<link rel="stylesheet" type="text/css" href="style/cube.css"/>
+</head>
+<body>
+    <div class="contain">
+    	<div class="cube">
+    	   <figure class='face1'>1</figure>
+    	   <figure class='face2'>2</figure>
+    	   <figure class='face3'>3</figure>
+    	   <figure class='face4'>4</figure>
+    	   <figure class='face5'>5</figure>
+    	   <figure class='face6'>6</figure>
+    	</div>
+    </div>
+</body>
+</html>
+```
 ### 其主要css代码如下  
 ```
 *{
