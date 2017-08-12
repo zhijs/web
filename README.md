@@ -14,5 +14,9 @@
 <br/>
 <br/>
 
-### 例子3:图片全屏轮播
+### 例子3:css3图片全屏轮播
 ### 效果展示 https://zhijs.github.io/web/animation
+<br/>
+<br/>
+### 例子4:css3圆圈进度条
+### 效果展示 https://zhijs.github.io/web/loading
