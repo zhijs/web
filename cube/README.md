@@ -30,7 +30,7 @@
 #### 实现立方体第一步
 #### 构造立方体
 首先将六个面置于重合的位置 eg:如下图所示
-![这里写图片描述](http://img.blog.csdn.net/20170812175758417?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzIyOTA2Nzk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast) 
+![这里写图片描述](images/a.png) 
 接下来分别构造各个面，例如顶面可以看成是由正面沿x轴顺时针方向旋转90度，然后沿y轴负方向平移高度的一半，再沿z轴负方向平移高度的一半，从而得到顶面  
 代码为
 ```
@@ -40,7 +40,7 @@
 } 
 ```
 结果如下图所示  
-![这里写图片描述](http://img.blog.csdn.net/20170812175827795?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzIyOTA2Nzk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述]images/b.png)
 同理可以构造出其他的各个面。
 
 ### 将包含这些面的容器应用动画，使其沿x,y,z轴旋转。
