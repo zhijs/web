@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.contain{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #2fF
+}
+@keyframes load{
+from{
+	transform:rotate(0deg);
+}
+to{
+    transform:rotate(360deg);
+}
+}
+.loading{
+	width:120px;
+	height:120px;
+	position: absolute;
+	top:50px;
+	left: 50%;
+	margin-left: -60px;
+	border-radius: 50%;
+	border-top: 15px solid rgb(255,255,255,1);
+	border-left: 15px solid rgb(255,255,255,0.3);
+	border-right: 15px solid rgb(255,255,255,0.3);
+	border-bottom: 15px solid rgb(255,255,255,0.4);
+	animation:load 2s infinite linear;
+
+}
