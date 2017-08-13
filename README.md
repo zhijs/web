@@ -31,5 +31,5 @@
 <br/>  
 
 ### 例子五：javascript and jquery实现日历插件
-### 效果展示：https://zhijs.github.io/web/datPicker
+### 效果展示：https://zhijs.github.io/web/datePicker
 
