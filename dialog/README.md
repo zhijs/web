@@ -5,7 +5,9 @@
 
 #### 1.引入样式文件  
 <br/>
+```
 <link rel="stylesheet" type="text/css" href="style/dialog.css"/>
+```
 <br/>
 #### 2.引入js插件文件:
 
