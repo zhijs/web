@@ -32,4 +32,8 @@
 
 ### 例子6：javascript and jquery实现日历插件
 ### 效果展示：https://zhijs.github.io/web/datepicker
+<br/>
+<br/> 
 
+### 例子6：javascript and jquery实现自定义对话框插件
+### 效果展示：https://zhijs.github.io/web/dialog
