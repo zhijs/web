@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>自定义对话框</title>
+	<meta charset='utf-8'/>
+	<link rel="stylesheet" type="text/css" href="style/dialog.css"/>
+    <style>
+     button{
+     	width: 100px;
+     	padding:3px;
+     	margin:30px 10px;
+     	background:#37c7d6;
+     	color:#fff;
+     }
+    </style>
+</head>
+
+<body>
+     <button id="dialog1">对话框1</button>
+     <button id="dialog2">对话框2</button>
+     <button id="dialog3">对话框3</button>
+     <button id="dialog4">对话框4</button>
+     <button id="dialog5">对话框5</button>
+  <script type="text/javascript" src='javascript/lib/jquery-3.1.0.min.js'></script>
+  <script type="text/javascript" src='javascript/customDialog.js'></script>
+  <script type="text/javascript">
+    $('#dialog1').on('click',function(){
+    	var dialog1=new Dialog();
+    	dialog1.open('自定义对话框');
+    });
+
+    $('#dialog2').on('click',function(){
+    	var dialog2=new Dialog();
+    	dialog2.open('<a href="http://www.baidu.com">打开百度</a>');
+    });
+
+    $('#dialog3').on('click',function(){
+    	var dialog3=new Dialog();
+    	dialog3.open({
+    		title:'自定义对话框',
+    		message:'This is an custom dialog',
+    		isShowCloseBtn:true,
+    		isShowComfirmBtn:true,
+    		onClose:function(){
+               console.log('取消');
+    		},
+    		onConfirm:function(){
+              console.log('确定');
+    		},
+    	});
+    });
+
+    $('#dialog4').on('click',function(){
+    	var dialog4=new Dialog();
+    	dialog4.open({
+    		title:'自定义对话框',
+    		message:'<ol><li>列表1</li><li>列表2</li><li>列表3</li></ol>',
+    		isShowCloseBtn:true,
+    		isShowComfirmBtn:true,
+    		onClose:function(){
+               console.log('取消');
+    		},
+    		onConfirm:function(){
+              console.log('确定');
+    		},
+    	});
+    });
+
+     $('#dialog5').on('click',function(){
+    	var dialog5=new Dialog();
+    	dialog5.open({
+    		title:'自定义对话框',
+    		message:'hello',
+    		isShowCloseBtn:false,
+    		isShowComfirmBtn:false,
+    		onClose:function(){
+               console.log('取消');
+    		},
+    		onConfirm:function(){
+              console.log('确定');
+    		},
+    	});
+    });
+
+   </script>
+
+</body>
+</html>
