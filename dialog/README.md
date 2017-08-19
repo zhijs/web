@@ -8,8 +8,9 @@
 <link rel="stylesheet" type="text/css" href="style/dialog.css"/>
 <br/>
 #### 2.引入js插件文件:
+
 ```
- <script type="text/javascript" src='javascript/lib/jquery-3.1.0.min.js'></script>
+ <script type="text/javascript" src='javascript/lib/jquery-3.1.0.min.js'></script>  
  <script type="text/javascript" src='javascript/customDialog.js'></script>
 ```
 <br/>
