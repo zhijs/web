@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>图片懒加载</title>
+	<meta charset='utf-8'/>
+	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+<h1>懒加载模块化</h1>
+<div class="img-contain">
+<img src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+<img src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+</div>
+
+
+<div class="img-contain">
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+</div>
+<div class="img-contain">
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+</div>
+<div class="img-contain">
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+</div>
+<div class="img-contain">
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+</div>
+<div class="img-contain">
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+</div>
+<div class="img-contain">
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+</div>
+<div class="img-contain">
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+</div>
+<div class="img-contain">
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+</div>
+<div class="img-contain">
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+<img src="" data-src="http://d.lanrentuku.com/down/png/1511/wsj2015/wsj2015-2.png"/>
+</div>
+<script type="text/javascript" src='js/lib/jquery-3.1.0.min.js'></script>
+<script type="text/javascript" src='js/lazyLoad.js'></script>
+<script type='text/javascript'>
+
+
+  lazyModule.init($('.img-contain'),function(ele){
+       $(this).find('img').each(function(){
+    	$(this).attr('src',$(this).attr('data-src'));
+    });
+  });
+</script>
+</body>
+</html>
