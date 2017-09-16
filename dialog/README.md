@@ -4,13 +4,14 @@
 <br/>  
 
 #### 1.引入样式文件 
+<br/>
 
 
-<br/>
 ```
-<link rel="stylesheet" type="text/css" href="style/dialog.css"/>
+ <link rel="stylesheet" type="text/css" href="style/dialog.css"/>
 ```
-<br/>
+
+
 #### 2.引入js插件文件:
 
 
