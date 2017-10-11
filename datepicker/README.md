@@ -3,8 +3,8 @@
 ### 使用方式：
 1.在页面中引入js文件  
 <ol>
-<li> a.jquery-3.1.0.min.js</li>
-<li>b.datePicker.js</li>
+<li> a  jquery-3.1.0.min.js</li>
+<li>b   datePicker.js</li>
 </ol>
 
 2.css文件：  
