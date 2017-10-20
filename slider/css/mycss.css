@@ -37,6 +37,7 @@ body{
 
 }
 .slider-item{
+	transition: all 0.5s linear;
 	height: 280px;
 	width: 500px;
 	float: left;
